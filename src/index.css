@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html{
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+}
+
+.active-link *{
+  display: block;
+  transition: all 0.2s ease-in;
+  fill: #0182FE;
+  color: #0182FE;
+  stroke: #0182FE;
+}
+
+.active-link div{
+  height: 10px;
+}
