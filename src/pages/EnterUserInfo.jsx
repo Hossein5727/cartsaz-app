@@ -64,7 +64,7 @@ const EnterUserInfo = () => {
                             placeholder="مثال:احسان عزتی"
                         />
                         {formik.touched.name && formik.errors.name && (
-                            <p className="text-sm text-red-400">{formik.errors.name}</p>
+                            <p className="text-xs text-red-400">{formik.errors.name}</p>
                         )}
                     </div>
 
@@ -88,7 +88,7 @@ const EnterUserInfo = () => {
                         </div>
 
                         {formik.touched.instagram && formik.errors.instagram && (
-                            <p className="text-sm text-red-400">{formik.errors.instagram}</p>
+                            <p className="text-xs text-red-400">{formik.errors.instagram}</p>
                         )}
                     </div>
 
@@ -105,7 +105,7 @@ const EnterUserInfo = () => {
                             placeholder="مثال:موبایلینو"
                         />
                         {formik.touched.shopName && formik.errors.shopName && (
-                            <p className="text-sm text-red-400">{formik.errors.shopName}</p>
+                            <p className="text-xs text-red-400">{formik.errors.shopName}</p>
                         )}
                     </div>
 
@@ -127,7 +127,7 @@ const EnterUserInfo = () => {
                         </select>
 
                         {formik.touched.activityType && formik.errors.activityType && (
-                            <p className="text-sm text-red-400">{formik.errors.activityType}</p>
+                            <p className="text-xs text-red-400">{formik.errors.activityType}</p>
                         )}
                     </div>
 
@@ -144,7 +144,7 @@ const EnterUserInfo = () => {
                             placeholder="مثال:cartsaz@gmail.com"
                         />
                         {formik.touched.email && formik.errors.email && (
-                            <p className="text-sm text-red-400">{formik.errors.email}</p>
+                            <p className="text-xs text-red-400">{formik.errors.email}</p>
                         )}
                     </div>
 
@@ -162,7 +162,7 @@ const EnterUserInfo = () => {
                             cols="50"
                         />
                         {formik.touched.address && formik.errors.address && (
-                            <p className="text-sm text-red-400">{formik.errors.address}</p>
+                            <p className="text-xs text-red-400">{formik.errors.address}</p>
                         )}
                     </div>
 
@@ -179,7 +179,7 @@ const EnterUserInfo = () => {
                             placeholder="مثال:1399886648411"
                         />
                         {formik.touched.postalCode && formik.errors.postalCode && (
-                            <p className="text-sm text-red-400">{formik.errors.postalCode}</p>
+                            <p className="text-xs text-red-400">{formik.errors.postalCode}</p>
                         )}
                     </div>
 
