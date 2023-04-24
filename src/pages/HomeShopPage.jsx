@@ -26,7 +26,7 @@ const HomeShopPage = () => {
                 <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-7 flex-wrap mt-7">
 
                     <div className="flex lg:flex-[0.5] flex-1 w-full lg:w-auto flex-col gap-4">
-                        <h2 className="text-main-black text-lg font-bold flex items-center gap-2">
+                        <h2 className="text-main-black text-base font-bold flex items-center gap-2">
                             <div className="w-2 h-2 bg-transparent border-2 border-main-blue rounded-full shadow-ring-box-shadow" />
                             آخرین سبد خرید ها
                         </h2>
@@ -38,7 +38,7 @@ const HomeShopPage = () => {
                     </div>
 
                     <div className="flex lg:flex-[0.5] flex-1 w-full lg:w-auto flex-col gap-4">
-                        <h2 className="text-main-black text-lg font-bold flex items-center gap-2">
+                        <h2 className="text-main-black text-base font-bold flex items-center gap-2">
                             <div className="w-2 h-2 bg-transparent border-2 border-main-blue rounded-full shadow-ring-box-shadow" />
                             آخرین محصولات
                         </h2>
