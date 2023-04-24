@@ -14,7 +14,7 @@ const SendPhoneNumber = ({onSubmit,formik}) => {
     return (
         <>
 
-            <form onSubmit={formik.handleSubmit} className="w-[370px] flex flex-col justify-center items-start gap-7">
+            <form onSubmit={formik.handleSubmit} className="w-[350px] flex flex-col justify-center items-start gap-7">
                 <p className="font-light text-main-black text-sm text-right">جهت ورود به پنل ابتدا شماره تماس خود را وارد کنید</p>
                 <div className="w-full flex items-center gap-3 border border-[#CBCBCB] rounded-md px-4">
                     <input

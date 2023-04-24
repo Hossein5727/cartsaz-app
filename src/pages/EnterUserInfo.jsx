@@ -25,10 +25,10 @@ const EnterUserInfo = () => {
 
     const validationSchema = () => Yup.object({
         name: Yup.string().required("فیلد نام و نام خانوادگی اجباری است"),
-        instagram: Yup.string().required("فیلد اینستاگرام خانوادگی اجباری است"),
+        instagram: Yup.string().required("فیلد اینستاگرام اجباری است"),
         shopName: Yup.string().required("فیلد نام فروشگاه اجباری است"),
         activityType: Yup.string().required("فیلد نوع فعالیت اجباری است"),
-        email: Yup.string().required("فیلد ایمیل اجباری است").email("فیلد ایمیل را بدرستی وارد کنید"),
+        email: Yup.string().email("فیلد ایمیل را بدرستی وارد کنید"),
     })
 
     const onSubmit = (values) => {

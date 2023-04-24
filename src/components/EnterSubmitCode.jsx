@@ -23,7 +23,7 @@ const EnterSubmitCode = ({ phoneNumber }) => {
     }
 
     return (
-        <div className="w-[370px] flex flex-col justify-center gap-7 ">
+        <div className="w-[350px] flex flex-col justify-center gap-7 ">
             <p className="font-light text-main-black text-sm text-right">
                 کد به شماره <span className="font-bold">{phoneNumber}</span> ارسال شد.کد را وارد کنید
             </p>
