@@ -17,7 +17,7 @@ const HomeShopPage = () => {
                 <p className="text-main-black mt-2 text-base font-normal">{userData.name} خوش اومدی!</p>
                 <hr className="border-b border-b-[#CBCBCB] border-dashed mt-5" />
 
-                <div className="w-full flex items-center justify-center gap-4 mt-7 h-8 lg:hidden">
+                <div className="w-full flex items-center justify-center gap-4 mt-7 md:h-14 h-8 lg:hidden">
                     <button className="btn bg-main-blue hover:bg-main-blue font-normal outline-none border-none text-white flex-[0.5] h-full">افزودن سبد خرید</button>
                     <button className="btn bg-main-black hover:bg-main-black font-normal outline-none border-none text-white flex-[0.5] h-full">ثبت خرید</button>
                 </div>
