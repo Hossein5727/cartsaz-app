@@ -1,15 +1,10 @@
-import { useState } from "react";
 
-const ProductOfBasketCard = ({ statusProductProps }) => {
-
-
+const LastProductOfBasketCard = ({ statusProductProps }) => {
     const pendingStatusProductClassName = " p-1 text-xs text-center border rounded-2xl border-[#A9791C] bg-[#FFF8E1] text-[#A9791C]";
     const successStatusProductClassName = " p-1 text-xs text-center border rounded-2xl border-[#00BA88] bg-[#F3FDFA] text-[#00966D]";
     const errorStatusProductClassName = " p-1 text-xs text-center border rounded-2xl border-[#ED2E2E] bg-[#FFF2F2] text-[#C30000]";
 
     const statusProduct = ["منتظر تکمیل", "آماده ارسال ", "لغو شده"]
-
-    console.log(statusProductProps);
 
     return (
         <div className="w-full px-4 py-3 flex justify-between items-center border border-[#CBCBCB] rounded-md shadow-product-basket-card-box-shadow">
@@ -31,4 +26,4 @@ const ProductOfBasketCard = ({ statusProductProps }) => {
     )
 }
 
-export default ProductOfBasketCard
+export default LastProductOfBasketCard

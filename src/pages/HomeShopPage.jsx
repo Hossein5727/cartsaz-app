@@ -1,6 +1,9 @@
-import ProductOfBasketCard from "../components/ProductOfBasketCard"
+import LastProduct from "../components/LastProduct"
+import LastProductOfBasketCard from "../components/LastProductOfBasketCard"
 import SectionWrapper from "../hoc/SectionWrapper"
 import { useUserDataStore } from "../store/userData"
+
+import { HiArrowNarrowLeft } from "react-icons/hi"
 
 const HomeShopPage = () => {
 
@@ -23,7 +26,7 @@ const HomeShopPage = () => {
                     <button className="btn bg-main-black hover:bg-main-black font-normal outline-none border-none text-white flex-[0.5] h-full">ثبت خرید</button>
                 </div>
 
-                <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-7 flex-wrap mt-7">
+                <div className="w-full flex flex-col lg:flex-row items-start lg:items-start gap-7 flex-wrap mt-7">
 
                     <div className="flex lg:flex-[0.5] flex-1 w-full lg:w-auto flex-col gap-4">
                         <h2 className="text-main-black text-base font-bold flex items-center gap-2">
@@ -31,9 +34,18 @@ const HomeShopPage = () => {
                             آخرین سبد خرید ها
                         </h2>
 
-                        <ProductOfBasketCard statusProductProps={0} />
-                        <ProductOfBasketCard statusProductProps={1} />
-                        <ProductOfBasketCard statusProductProps={2} />
+                        <LastProductOfBasketCard statusProductProps={0} />
+                        <LastProductOfBasketCard statusProductProps={1} />
+                        <LastProductOfBasketCard statusProductProps={2} />
+
+                        <div className="flex items-center justify-center gap-5">
+                            <div className="border-b border-b-[#CBCBCB] border-dashed w-full" />
+                            <button className="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] outline-none border-none text-main-black rounded-3xl px-7 font-medium flex items-center gap-2">
+                                مشاهده همه
+                                <HiArrowNarrowLeft size={20} />
+                            </button>
+                            <div className="border-b border-b-[#CBCBCB] border-dashed w-full" />
+                        </div>
 
                     </div>
 
@@ -42,7 +54,21 @@ const HomeShopPage = () => {
                             <div className="w-2 h-2 bg-transparent border-2 border-main-blue rounded-full shadow-ring-box-shadow" />
                             آخرین محصولات
                         </h2>
-                        
+
+                        <LastProduct />
+                        <LastProduct />
+                        <LastProduct />
+                        <LastProduct />
+
+                        <div className="flex items-center justify-center gap-5">
+                            <div className="border-b border-b-[#CBCBCB] border-dashed w-full" />
+                            <button className="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] outline-none border-none text-main-black rounded-3xl px-7 font-medium flex items-center gap-2">
+                                مشاهده همه
+                                <HiArrowNarrowLeft size={20} />
+                            </button>
+                            <div className="border-b border-b-[#CBCBCB] border-dashed w-full" />
+                        </div>
+
                     </div>
 
                 </div>
