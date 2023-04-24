@@ -1,3 +1,4 @@
+import ProductOfBasketCard from "../components/ProductOfBasketCard"
 import SectionWrapper from "../hoc/SectionWrapper"
 import { useUserDataStore } from "../store/userData"
 
@@ -24,18 +25,24 @@ const HomeShopPage = () => {
 
                 <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-7 flex-wrap mt-7">
 
-                    <div className="flex flex-1 lg:flex-[0.5] flex-col gap-4">
+                    <div className="flex lg:flex-[0.5] flex-1 w-full lg:w-auto flex-col gap-4">
                         <h2 className="text-main-black text-lg font-bold flex items-center gap-2">
                             <div className="w-2 h-2 bg-transparent border-2 border-main-blue rounded-full shadow-ring-box-shadow" />
                             آخرین سبد خرید ها
                         </h2>
+
+                        <ProductOfBasketCard statusProductProps={0} />
+                        <ProductOfBasketCard statusProductProps={1} />
+                        <ProductOfBasketCard statusProductProps={2} />
+
                     </div>
 
-                    <div className="flex flex-1 lg:flex-[0.5] flex-col gap-4">
+                    <div className="flex lg:flex-[0.5] flex-1 w-full lg:w-auto flex-col gap-4">
                         <h2 className="text-main-black text-lg font-bold flex items-center gap-2">
                             <div className="w-2 h-2 bg-transparent border-2 border-main-blue rounded-full shadow-ring-box-shadow" />
                             آخرین محصولات
                         </h2>
+                        
                     </div>
 
                 </div>

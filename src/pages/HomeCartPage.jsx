@@ -16,8 +16,11 @@ const HomeCartPage = () => {
 
             </div>
 
-            <div className="relative w-full">
+            <div className="relative w-full ">
+            <div className="mb-[85px]">
+
                 <Outlet />
+            </div>
                 <BottomNavigation />
             </div>
         </>

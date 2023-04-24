@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom"
 
 const BottomNavigation = () => {
     return (
-        <div className="w-full fixed bottom-0 px-6 text-xl bg-white border-t border-t-[#CBCBCB] flex lg:hidden justify-evenly items-center gap-4">
+        <div className="w-full h-[85px] fixed bottom-0 px-6 text-xl bg-white border-t border-t-[#CBCBCB] flex lg:hidden justify-evenly items-center gap-4">
 
             <NavLink to={"/home/cart/home"} className={({ isActive }) => `flex flex-col gap-2 items-center ${isActive && "active-link"}`}>
                 <div className="bg-main-blue h-[0] w-[60px] rounded-bl-lg rounded-br-lg  transition-all duration-150"></div>
