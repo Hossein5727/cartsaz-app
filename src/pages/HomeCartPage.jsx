@@ -17,7 +17,7 @@ const HomeCartPage = () => {
             </div>
 
             <div className="relative w-full ">
-            <div className="mb-[85px]">
+            <div className="mb-[80px]">
 
                 <Outlet />
             </div>
