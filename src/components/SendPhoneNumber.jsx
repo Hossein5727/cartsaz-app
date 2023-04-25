@@ -6,9 +6,7 @@ import toast from 'react-hot-toast';
 const SendPhoneNumber = ({onSubmit,formik}) => {
 
     const validatationFields = () => {
-        toast(formik.errors.phoneNumber, {
-            icon: '🙄', className: "bg-red-200"
-        });
+        toast.error(formik.errors.phoneNumber,);
     }
 
     return (
