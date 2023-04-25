@@ -17,7 +17,7 @@ const MenuMobile = () => {
 
 
     return (
-        <div className={`absolute  top-0 w-[300px] h-[calc(100vh-80px)] bg-white transition-all duration-150 lg:hidden ${!isShowMenu ? "-right-96 transition-all duration-150" : "right-0  transition-all duration-150 z-[5]"}`}>
+        <div className={`absolute top-0 w-[300px] menu-mobile bg-white transition-all duration-150 lg:hidden ${!isShowMenu ? "-right-96 transition-all duration-150" : "right-0  transition-all duration-150 z-[5]"}`}>
             <div className="px-5 py-5">
 
                 <IoClose

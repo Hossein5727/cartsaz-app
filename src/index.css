@@ -18,3 +18,7 @@ body,html{
 .active-link div{
   height: 10px;
 }
+
+.menu-mobile{
+  height: calc(100vh - 80px) !important;
+}
