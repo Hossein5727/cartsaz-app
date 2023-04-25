@@ -26,11 +26,11 @@ const MenuMobile = () => {
                     className="mb-5"
                 />
 
-                <h1 className="text-xl font-semibold  text-main-blue">فروشگاه {userData.shopName}</h1>
+                <h1 className="text-xl font-semibold  text-main-blue">فروشگاه {userData?.shopName}</h1>
 
                 <div className="flex flex-col gap-1 mt-3">
-                    <p className="text-main-black text-base font-normal">{userData.name}</p>
-                    <p className="text-[#74787C] text-sm font-normal">{userData.phoneNumber}</p>
+                    <p className="text-main-black text-base font-normal">{userData?.name}</p>
+                    <p className="text-[#74787C] text-sm font-normal">{userData?.phoneNumber}</p>
                 </div>
             </div>
 

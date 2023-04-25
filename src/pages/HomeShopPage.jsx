@@ -25,8 +25,8 @@ const HomeShopPage = () => {
             </div>
             <section className="px-4 py-6">
 
-                <h1 className="text-xl font-semibold text-main-blue">فروشگاه {userData.shopName}</h1>
-                <p className="text-main-black mt-2 text-base font-normal">{userData.name} خوش اومدی!</p>
+                <h1 className="text-xl font-semibold text-main-blue">فروشگاه {userData?.shopName}</h1>
+                <p className="text-main-black mt-2 text-base font-normal">{userData?.name} خوش اومدی!</p>
                 <hr className="border-b border-b-[#CBCBCB] border-dashed mt-5" />
 
                 <div className="w-full flex items-center justify-center gap-4 mt-7 md:h-14 h-8 lg:hidden">
