@@ -3,6 +3,10 @@ import BottomNavigation from "../components/BottomNavigation"
 import { Outlet } from "react-router-dom"
 
 const HomeCartPage = () => {
+
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     return (
         <>
             <div className="hidden lg:flex justify-between items-center py-5 px-4 border-b border-b-[#CBCBCB]">
@@ -16,9 +20,9 @@ const HomeCartPage = () => {
             </div>
 
             <div className="relative w-full">
-            <div className={`mb-[80px] `}>
-                <Outlet />
-            </div>
+                <div className={`mb-[80px] `}>
+                    <Outlet />
+                </div>
                 <BottomNavigation />
             </div>
         </>
