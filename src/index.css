@@ -20,6 +20,6 @@ body,html{
 }
 
 .menu-mobile{
-  height: calc(100svh - 80px) !important;
+  height: calc(100vh - 80px) !important;
   /* height: 84vh; */
 }
