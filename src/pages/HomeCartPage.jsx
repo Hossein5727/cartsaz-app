@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import BottomNavigation from "../components/BottomNavigation"
 
 import { Outlet } from "react-router-dom"
@@ -6,6 +7,10 @@ const HomeCartPage = () => {
 
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    useEffect(()=>{
+        window.scrollTo({top:0,behavior:"smooth"})
+    },[])
 
     return (
         <>
