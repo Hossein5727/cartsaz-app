@@ -19,7 +19,7 @@ const EnterSubmitCode = ({ phoneNumber }) => {
     }
 
     const submitHandler = () => {
-        navigate("/enteruserinfo")
+        navigate("/enteruserinfo",{state:phoneNumber})
     }
 
     return (

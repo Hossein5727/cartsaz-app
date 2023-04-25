@@ -1,11 +1,10 @@
-import { Outlet } from "react-router-dom"
-import SectionWrapper from "../hoc/SectionWrapper"
 import BottomNavigation from "../components/BottomNavigation"
+
+import { Outlet } from "react-router-dom"
 
 const HomeCartPage = () => {
     return (
         <>
-
             <div className="hidden lg:flex justify-between items-center py-5 px-4 border-b border-b-[#CBCBCB]">
                 <p className="text-main-black font-bold">کارت ساز Cartsaz.com</p>
 
@@ -16,9 +15,8 @@ const HomeCartPage = () => {
 
             </div>
 
-            <div className="relative w-full ">
-            <div className="mb-[80px]">
-
+            <div className="relative w-full">
+            <div className={`mb-[80px] `}>
                 <Outlet />
             </div>
                 <BottomNavigation />

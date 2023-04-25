@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from "formik"
 import * as Yup from 'yup'
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useUserDataStore } from '../store/userData';
 
 
@@ -14,14 +14,18 @@ const initialValues = {
     address: "",
     postalCode: "",
     activityType: "",
+    phoneNumber: "",
 }
 
 const EnterUserInfo = () => {
 
     const newUserData = useUserDataStore(state => state.newUserData)
 
-    
+
     const navigate = useNavigate()
+    const location = useLocation()
+
+    const userPhoneNumber = location.state
 
     const validationSchema = () => Yup.object({
         name: Yup.string().required("فیلد نام و نام خانوادگی اجباری است"),
@@ -32,7 +36,9 @@ const EnterUserInfo = () => {
     })
 
     const onSubmit = (values) => {
+        formik.values.phoneNumber=userPhoneNumber
         newUserData(values)
+
         navigate("/home/cart/home")
     }
 

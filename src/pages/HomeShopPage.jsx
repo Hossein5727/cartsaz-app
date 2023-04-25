@@ -1,18 +1,26 @@
 import LastProduct from "../components/LastProduct"
 import LastProductOfBasketCard from "../components/LastProductOfBasketCard"
+import MenuMobile from "../components/MenuMobile"
+
 import SectionWrapper from "../hoc/SectionWrapper"
 import { useUserDataStore } from "../store/userData"
+import { useShowMenuMobile } from "../store/isShowMenuBobile"
 
 import { HiArrowNarrowLeft } from "react-icons/hi"
+import { TbMenu2 } from "react-icons/tb"
 
 const HomeShopPage = () => {
 
     const userData = useUserDataStore(state => state.userData)
     const newUserData = useUserDataStore(state => state.newUserData)
 
+    const isShowMenu = useShowMenuMobile(state => state.isShowMenu)
+    const openMenu = useShowMenuMobile(state => state.openMenu)
+
     return (
-        <>
-            <div className="px-4 py-5 border-b border-b-[#CBCBCB] lg:hidden">
+        <section className={`${isShowMenu && "bg-[#c4c0c0] lg:bg-transparent"}`}>
+            <div className="px-4 py-5 border-b flex items-center gap-2 border-b-[#CBCBCB] lg:hidden">
+                <TbMenu2 size={24} onClick={openMenu} />
                 <h1 className="text-lg font-bold text-main-black">خانه</h1>
             </div>
             <section className="px-4 py-6">
@@ -73,7 +81,8 @@ const HomeShopPage = () => {
 
                 </div>
             </section>
-        </>
+            <MenuMobile />
+        </section>
     )
 }
 
