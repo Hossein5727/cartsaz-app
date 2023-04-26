@@ -1,10 +1,9 @@
-import React from 'react';
-import { useFormik } from "formik"
-import * as Yup from 'yup'
-
-import { useNavigate, useLocation } from 'react-router-dom';
 import { useUserDataStore } from '../store/userData';
 
+import { useEffect } from 'react';
+import { useFormik } from "formik"
+import * as Yup from 'yup'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const initialValues = {
     name: "",
@@ -36,7 +35,7 @@ const EnterUserInfo = () => {
     })
 
     const onSubmit = (values) => {
-        formik.values.phoneNumber=userPhoneNumber
+        formik.values.phoneNumber = userPhoneNumber
         newUserData(values)
 
         navigate("/home/cart/home")
@@ -49,6 +48,13 @@ const EnterUserInfo = () => {
         enableReinitialize: true,
         validateOnMount: true
     })
+
+    useEffect(() => {
+        const data = localStorage.getItem("user-data")
+        if (JSON.parse(data).name) {
+            navigate("/home/cart/home")
+        }
+    }, [])
 
     return (
         <div className="h-screen">
