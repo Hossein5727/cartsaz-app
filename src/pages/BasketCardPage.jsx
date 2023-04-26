@@ -27,7 +27,7 @@ const BasketCardPage = () => {
 
       <TabSectionBasketCard />
 
-      <section className="px-4 py-6 w-full flex flex-wrap gap-4">
+      <section className="px-4 py-6 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <BasketCardComp buyerName={"محمدرضا علوی"} statusBasketCardProps={1} />
         <BasketCardComp buyerName={"حسین غیاثی"} statusBasketCardProps={2} />
         <BasketCardComp buyerName={"بی نام"} statusBasketCardProps={0} />
