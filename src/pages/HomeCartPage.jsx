@@ -1,6 +1,7 @@
 import BottomNavigation from "../components/BottomNavigation"
 
 import { Outlet } from "react-router-dom"
+import Navbar from "../components/Navbar";
 
 const HomeCartPage = () => {
 
@@ -20,12 +21,13 @@ const HomeCartPage = () => {
 
             </div>
 
-            <div className="relative w-full">
-                <div className={`mb-[80px] `}>
+            <div className="relative w-full lg:flex ">
+                <Navbar />
+                <div className={`mb-[80px] lg:mb-0 lg:flex-1`}>
                     <Outlet />
                 </div>
-                <BottomNavigation />
             </div>
+                <BottomNavigation />
         </>
     )
 }

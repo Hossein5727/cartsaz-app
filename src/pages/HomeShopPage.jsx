@@ -6,9 +6,9 @@ import SectionWrapper from "../hoc/SectionWrapper"
 import { useUserDataStore } from "../store/userData"
 import { useShowMenuMobile } from "../store/isShowMenuBobile"
 
+import { useEffect } from "react"
 import { HiArrowNarrowLeft } from "react-icons/hi"
 import { TbMenu2 } from "react-icons/tb"
-import { useEffect } from "react"
 
 const HomeShopPage = () => {
 

@@ -15,6 +15,17 @@ body,html{
   stroke: #0182FE;
 }
 
+.active-link-nav *{
+  transition: all 0.2s ease-in;
+  fill: #0182FE;
+  color: #0182FE;
+  stroke: #0182FE;
+}
+
+.active-link-nav div{
+  width: 5px;
+}
+
 .active-link div{
   height: 10px;
 }
