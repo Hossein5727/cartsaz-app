@@ -8,6 +8,7 @@ import { useShowMenuMobile } from "../store/isShowMenuBobile"
 
 import { HiArrowNarrowLeft } from "react-icons/hi"
 import { TbMenu2 } from "react-icons/tb"
+import { useEffect } from "react"
 
 const HomeShopPage = () => {
 
@@ -17,6 +18,10 @@ const HomeShopPage = () => {
     const isShowMenu = useShowMenuMobile(state => state.isShowMenu)
     const openMenu = useShowMenuMobile(state => state.openMenu)
 
+    useEffect(()=>{
+        window.scrollTo({top:0,behavior:"smooth"})
+    },[])
+    
     return (
         <section className={`${isShowMenu && "bg-[#c4c0c0] lg:bg-transparent"}`}>
             <div className="px-4 py-5 border-b flex items-center gap-2 border-b-[#CBCBCB] lg:hidden">
