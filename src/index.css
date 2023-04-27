@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --animate-duration: 300ms;
+  /* --animate-delay: 0.9s; */
+}
+
 body,html{
   font-family: 'Vazirmatn', sans-serif;
   direction: rtl;

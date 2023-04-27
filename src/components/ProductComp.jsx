@@ -1,9 +1,9 @@
 import defaultImg from '../assets/productProductPage/p-2.png'
 import deleteIcon from '../assets/delete-icon.svg'
 
-const ProductComp = ({ imgSrc = defaultImg, productName = "عسل شانه ای",onDelete }) => {
+const ProductComp = ({id, imgSrc = defaultImg, productName = "عسل شانه ای",onDelete }) => {
     return (
-        <div className='w-full flex justify-between items-center px-4 py-3 border border-[#CBCBCB] rounded-md shadow-product-basket-card-box-shadow'>
+        <div id={id} className='w-full animate__animated flex justify-between items-center px-4 py-3 border border-[#CBCBCB] rounded-md shadow-product-basket-card-box-shadow'>
 
             <div className='flex items-center gap-3'>
                 <img src={imgSrc} />
