@@ -1,34 +1,14 @@
-import homeIcon from "../assets/home-icon.svg"
-import basketCatrIcon from "../assets/shopping-bag.svg"
-import productsIcon from "../assets/products.svg"
-import profileIcon from "../assets/profile.svg"
+import productImg1 from '../assets/productProductPage/p-1.png'
+import productImg2 from '../assets/productProductPage/p-3.png'
+import productImg3 from '../assets/productProductPage/p-4.png'
+import productImg4 from '../assets/productProductPage/p-5.png'
+import productImg5 from '../assets/productProductPage/p-6.png'
 
-export const bottomNavigationLinks = [
-    {
-        id: 1,
-        icon: homeIcon,
-        link: "/home/cart/home",
-        text: "خانه"
-    },
-    {
-        id: 2,
-        icon: basketCatrIcon,
-        link: "/home/cart/home",
-        text: "سبد خرید"
-
-    },
-    {
-        id: 3,
-        icon: productsIcon,
-        link: "/home/cart/home",
-        text: "محصولات"
-
-    },
-    {
-        id: 4,
-        icon: profileIcon,
-        link: "/home/cart/home",
-        text: "پروفایل"
-
-    },
+export const dataProducts=[
+    {id:1,img:productImg1},
+    {id:2},
+    {id:3,img:productImg2,title:"روغن زیتون"},
+    {id:4,img:productImg3,title:"سیب زمینی"},
+    {id:5,img:productImg4,title:"شکلات"},
+    {id:6,img:productImg5,title:"چای"},
 ]

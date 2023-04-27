@@ -20,7 +20,6 @@ const EnterUserInfo = () => {
 
     const newUserData = useUserDataStore(state => state.newUserData)
 
-
     const navigate = useNavigate()
     const location = useLocation()
 

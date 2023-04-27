@@ -36,7 +36,7 @@ const BasketCardPage = () => {
       </section>
 
       <button
-        className="fixed bottom-[100px] left-[50%] translate-x-[-50%] z-[2]  btn  animate-none bg-main-blue  hover:bg-main-blue border-none outline-none font-medium w-[85vw] lg:hidden"
+        className="fixed bottom-[100px] left-[50%] translate-x-[-50%] z-[2] btn animate-none bg-main-blue  hover:bg-main-blue active:hover:translate-x-[-50%] border-none outline-none font-medium w-[85vw] lg:hidden"
       >
         افزودن سبد خرید
       </button>

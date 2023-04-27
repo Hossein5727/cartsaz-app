@@ -2,12 +2,12 @@ import BottomNavigation from "../components/BottomNavigation"
 
 import { Outlet } from "react-router-dom"
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 
 const HomeCartPage = () => {
 
     let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
 
     return (
         <>
@@ -27,7 +27,7 @@ const HomeCartPage = () => {
                     <Outlet />
                 </div>
             </div>
-                <BottomNavigation />
+            <BottomNavigation />
         </>
     )
 }

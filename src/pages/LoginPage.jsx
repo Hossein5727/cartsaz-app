@@ -15,9 +15,11 @@ const initialValues = {
 }
 
 const LoginPage = () => {
-
+    
     const [isShowPinCode, setIsShowPinCode] = useState(false)
-
+    
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     const validationSchema = () => Yup.object({
         phoneNumber: Yup.string().required("لطفا فیلد شماره تماس را پر کنید").min(11, "فیلد شماره تماس باید 11 رقم باشد").max(11, "فیلد شماره تماس باید 11 رقم باشد")
