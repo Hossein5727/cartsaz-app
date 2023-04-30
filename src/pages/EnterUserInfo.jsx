@@ -50,7 +50,7 @@ const EnterUserInfo = () => {
 
     useEffect(() => {
         const data = localStorage.getItem("user-data")
-        if (JSON.parse(data).name) {
+        if (JSON.parse(data)?.name) {
             navigate("/home/cart/home")
         }
     }, [])

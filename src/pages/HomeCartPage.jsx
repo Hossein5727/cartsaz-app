@@ -2,7 +2,6 @@ import BottomNavigation from "../components/BottomNavigation"
 
 import { Outlet } from "react-router-dom"
 import Navbar from "../components/Navbar";
-import { useEffect } from "react";
 
 const HomeCartPage = () => {
 

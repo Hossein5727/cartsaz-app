@@ -18,8 +18,14 @@ const HomeShopPage = () => {
     const isShowMenu = useShowMenuMobile(state => state.isShowMenu)
     const openMenu = useShowMenuMobile(state => state.openMenu)
 
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    
     useEffect(()=>{
         window.scrollTo({top:0,behavior:"smooth"})
+
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
     },[])
     
     return (
