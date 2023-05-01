@@ -26,7 +26,7 @@ const BasketCardComp = ({ statusBasketCardProps,buyerName }) => {
                     <h4 className="text-main-black text-base">{Number(250000).toLocaleString('fa-pe')} تومان</h4>
                     <p className={statusBasketCardProps == 0 ? pendingStatusBasketCardClassName : statusBasketCardProps == 1 ? successStatusBasketCardClassName : errorStatusBasketCardClassName}>{statusProduct[Number(statusBasketCardProps)]}</p>
 
-                    <div className={`absolute left-0 bottom-3 ${statusBasketCardProps == 0 ? "bg-[#F4B740]" : statusBasketCardProps == 1 ? "bg-[#00BA88]" : "bg-[#ED2E2E]"} h-[30px] w-[5px] rounded-tl-lg rounded-tr-lg  transition-all duration-150`} />
+                    <div className={`absolute left-0 bottom-3 ${statusBasketCardProps == 0 ? "bg-[#F4B740]" : statusBasketCardProps == 1 ? "bg-[#00BA88]" : "bg-[#ED2E2E]"} h-[30px] w-[5px] rounded-br-lg rounded-tr-lg  transition-all duration-150`} />
                 </div>
 
             </div>
