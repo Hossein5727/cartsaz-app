@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import { TbMenu2 } from "react-icons/tb"
 
 import MenuMobile from "../components/MenuMobile"
@@ -8,10 +10,16 @@ import { useUserDataStore } from "../store/userData"
 
 const ProfilePage = () => {
 
+  const navigate = useNavigate()
+
   const userData = useUserDataStore(state => state.userData)
 
   const isShowMenu = useShowMenuMobile(state => state.isShowMenu)
   const openMenu = useShowMenuMobile(state => state.openMenu)
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }, [])
 
   return (
     <section className={`${isShowMenu && "bg-[#c4c0c0] lg:bg-transparent"} h-screen`}>
@@ -35,9 +43,9 @@ const ProfilePage = () => {
           </p>
 
           <p className="text-[#74787C] text-sm">
-          ایمیل (اختیاری)
+            ایمیل (اختیاری)
             <br />
-            <h4 className="text-main-black text-base mt-1">{userData.email?userData.email:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.email ? userData.email : "---"}</h4>
           </p>
         </div>
 
@@ -49,13 +57,13 @@ const ProfilePage = () => {
           </p>
 
           <p className="text-[#74787C] text-sm ">
-          آدرس فروشگاه
+            آدرس فروشگاه
             <br />
             <h4 className="text-main-black text-base mt-1">instagram.com/{userData?.instagram} </h4>
           </p>
 
           <p className="text-[#74787C] text-sm">
-          حوزه فروشگاه
+            حوزه فروشگاه
             <br />
             <h4 className="text-main-black text-base mt-1">{userData?.activityType}</h4>
           </p>
@@ -65,20 +73,21 @@ const ProfilePage = () => {
           <p className="text-[#74787C] text-sm">
             آدرس فرستنده (اختیاری)
             <br />
-            <h4 className="text-main-black text-base mt-1">{userData.address?userDaa.address:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.address ? userDaa.address : "---"}</h4>
           </p>
 
           <p className="text-[#74787C] text-sm">
-          کد پستی فرستنده (اختیاری)
+            کد پستی فرستنده (اختیاری)
             <br />
-            <h4 className="text-main-black text-base mt-1">{userData.postalCode?userData.postalCode:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.postalCode ? userData.postalCode : "---"}</h4>
           </p>
         </div>
-        
+
       </section>
 
       <button
         className="fixed bottom-[100px] left-[50%] translate-x-[-50%] z-[2] btn animate-none bg-main-black  hover:bg-main-black active:hover:translate-x-[-50%] border-none outline-none font-medium w-[85vw] lg:hidden"
+        onClick={() => navigate("/home/cart/editprofile")}
       >
         ویرایش پروفایل
       </button>
