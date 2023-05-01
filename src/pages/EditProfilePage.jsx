@@ -57,7 +57,7 @@ const EditProfilePage = () => {
         <div className="h-screen">
             <div className="w-full py-3 px-4 mb-3 border-b border-b-[#CBCBCB] text-main-black font-bold">
                 <div className='flex items-center gap-3'>
-                    <BsArrowRight className="text-2xl" />
+                    <BsArrowRight onClick={()=>navigate(-1)} className="text-2xl" />
                     <h3>ویرایش پروفایل</h3>
                 </div>
             </div>
