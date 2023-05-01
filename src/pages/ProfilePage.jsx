@@ -25,19 +25,19 @@ const ProfilePage = () => {
           <p className="text-[#74787C] text-sm">
             نام شما
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData?.name}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData?.name}</h4>
           </p>
 
           <p className="text-[#74787C] text-sm ">
             شماره تماس
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData?.phoneNumber}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData?.phoneNumber}</h4>
           </p>
 
           <p className="text-[#74787C] text-sm">
           ایمیل (اختیاری)
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData.email?userData.email:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.email?userData.email:"---"}</h4>
           </p>
         </div>
 
@@ -45,19 +45,19 @@ const ProfilePage = () => {
           <p className="text-[#74787C] text-sm">
             نام فروشگاه
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData?.shopName}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData?.shopName}</h4>
           </p>
 
           <p className="text-[#74787C] text-sm ">
           آدرس فروشگاه
             <br />
-            <h4 className="text-main-black text-lg mt-1">instagram.com/{userData?.instagram} </h4>
+            <h4 className="text-main-black text-base mt-1">instagram.com/{userData?.instagram} </h4>
           </p>
 
           <p className="text-[#74787C] text-sm">
           حوزه فروشگاه
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData?.activityType}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData?.activityType}</h4>
           </p>
         </div>
 
@@ -65,13 +65,13 @@ const ProfilePage = () => {
           <p className="text-[#74787C] text-sm">
             آدرس فرستنده (اختیاری)
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData.address?userDaa.address:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.address?userDaa.address:"---"}</h4>
           </p>
 
           <p className="text-[#74787C] text-sm">
           کد پستی فرستنده (اختیاری)
             <br />
-            <h4 className="text-main-black text-lg mt-1">{userData.postalCode?userData.postalCode:"---"}</h4>
+            <h4 className="text-main-black text-base mt-1">{userData.postalCode?userData.postalCode:"---"}</h4>
           </p>
         </div>
         
