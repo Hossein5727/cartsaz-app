@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs"
 import { useNavigate } from "react-router-dom"
 import { motion } from 'framer-motion'
 import BasketCardComp from "../components/BasketCardComp"
+import TabsBasketCard from "../components/TabsBasketCard"
 
 const CreateBasketCardPage = () => {
 
@@ -12,7 +13,7 @@ const CreateBasketCardPage = () => {
     console.log(screenSize.width);
 
 
-    
+
     function getCurrentDimension() {
         return {
             width: window.innerWidth,
@@ -25,10 +26,10 @@ const CreateBasketCardPage = () => {
     {
         visible: {
             x: 0,
-            transition: { type: "tween", duration: "0.4", ease: "anticipate", }
+            transition: { type: "tween", duration: "0.4", ease: "anticipate", },
         },
         hidden: {
-            x: 2000
+            x: 2000,
         },
         // visible: { opacity: 1,x:200 },
         // hidden: { opacity: 0 },
@@ -50,7 +51,7 @@ const CreateBasketCardPage = () => {
             window.removeEventListener('resize', updateDimension);
         })
     }, [screenSize])
-    
+
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }, [])
@@ -60,7 +61,7 @@ const CreateBasketCardPage = () => {
         <motion.section
             initial="hidden"
             animate="visible"
-            variants={screenSize.width>=1024 ? variants2 : variants}
+            variants={screenSize.width >= 1024 ? variants2 : variants}
             className={`h-screen lg:px-4`}
         >
             <div className="px-4 py-5 border-b flex items-center gap-2 border-b-[#CBCBCB] ">
@@ -71,6 +72,7 @@ const CreateBasketCardPage = () => {
                 <h1 className="text-lg font-bold text-main-black">ایجاد سبد خرید جدید</h1>
             </div>
 
+            <TabsBasketCard />
 
         </motion.section>
     )
