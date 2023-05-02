@@ -10,7 +10,7 @@ const TabsBasketCard = () => {
       <ul className="flex justify-evenly items-center relative text-main-black border-b border-b-[#CBCBCB] pb-2">
         <TabNavItem title="محصولات" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <TabNavItem title="تنظیمات" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <div className={`absolute z-[2] bottom-0 right-0 w-[100px] h-[3px] bg-main-blue transition-all duration-150  ${activeTab=="tab1"?"-translate-x-[90px]":"-translate-x-[250px]"}`}/>
+        {/* <div className={`absolute z-[2] bottom-0 right-0 w-[100px] h-[3px] bg-main-blue transition-all duration-150  ${activeTab=="tab1"?"-translate-x-[5rem]":"-translate-x-[14rem]"}`}/> */}
       </ul>
  
       <div className="outlet">
