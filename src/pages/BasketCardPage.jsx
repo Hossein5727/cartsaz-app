@@ -1,4 +1,7 @@
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+import { TbMenu2 } from "react-icons/tb"
+
 import BasketCardComp from "../components/BasketCardComp"
 import MenuMobile from "../components/MenuMobile"
 import TabSectionBasketCard from "../components/TabSectionBasketCard"
@@ -6,9 +9,9 @@ import SectionWrapper from "../hoc/SectionWrapper"
 
 import { useShowMenuMobile } from "../store/isShowMenuBobile"
 
-import { TbMenu2 } from "react-icons/tb"
-
 const BasketCardPage = () => {
+
+  const navigate=useNavigate()
 
   const isShowMenu = useShowMenuMobile(state => state.isShowMenu)
   const openMenu = useShowMenuMobile(state => state.openMenu)
@@ -37,6 +40,7 @@ const BasketCardPage = () => {
 
       <button
         className="fixed bottom-[100px] left-[50%] translate-x-[-50%] z-[2] btn animate-none bg-main-blue  hover:bg-main-blue active:hover:translate-x-[-50%] border-none outline-none font-medium w-[85vw] lg:hidden"
+        onClick={()=>navigate("/home/cart/createbasketcard")}
       >
         افزودن سبد خرید
       </button>

@@ -1,10 +1,12 @@
-import BottomNavigation from "../components/BottomNavigation"
+import { Outlet, useNavigate } from "react-router-dom"
 
-import { Outlet } from "react-router-dom"
+import BottomNavigation from "../components/BottomNavigation"
 import Navbar from "../components/Navbar";
 
 const HomeCartPage = () => {
 
+  const navigate=useNavigate()
+    
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`)
 
@@ -14,7 +16,12 @@ const HomeCartPage = () => {
                 <p className="text-main-black font-bold">کارت ساز Cartsaz.com</p>
 
                 <div className=" flex items-center justify-center gap-4 h-8">
-                    <button className="btn bg-main-blue hover:bg-main-blue outline-none border-none text-white w-36 h-full">افزودن سبد خرید</button>
+                    <button
+                        className="btn bg-main-blue hover:bg-main-blue outline-none border-none text-white w-36 h-full"
+                        onClick={() => navigate("/home/cart/createbasketcard")}
+                    >
+                        افزودن سبد خرید
+                    </button>
                     <button className="btn bg-main-black hover:bg-main-black outline-none border-none text-white w-36 h-full">ثبت خرید</button>
                 </div>
 
