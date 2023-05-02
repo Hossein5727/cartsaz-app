@@ -7,10 +7,8 @@ import BasketCardComp from "../components/BasketCardComp"
 const CreateBasketCardPage = () => {
 
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
-    const isLarge = useIsLarge()
     const navigate = useNavigate()
 
-    console.log(isLarge);
     console.log(screenSize.width);
 
 
